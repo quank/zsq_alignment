@@ -15,5 +15,9 @@ mathjax-support = true
 search.enable = true
 
 additional-css = ["zsq_code.css", "zsq-code-wrap.css", "zsq_print_table.css"]
-additional-js = ["zsq_code.js"]
+additional-js = ["zsq_code.js", "mermaid.min.js", "mermaid-init.js"]
 
+[preprocessor]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"

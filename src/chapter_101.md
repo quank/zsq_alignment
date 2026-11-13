@@ -18,4 +18,12 @@ for x in tqdm(alist):
 
 ```
 
+## mermaid
+```mermaid
+grapg TD;
+  A --> B;
+  A --> D;
+  D --> B;
+
+```
 
