@@ -1,0 +1,42 @@
+.foldable-wrapper {
+    margin: 1em 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+}
+
+.foldable-header {
+    cursor: pointer;
+    padding: 0.5em 1em;
+    font-weight: 600;
+    font-size: 0.9em;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.foldable-header::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: 0.6em;
+    font-size: 0.7em;
+    transition: transform 0.2s ease;
+}
+
+.foldable-wrapper.open .foldable-header::before {
+    transform: rotate(90deg);
+}
+
+.foldable-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.foldable-body pre {
+    margin: 0;
+    padding: 1em;
+    border-top: 1px solid #ddd;
+}

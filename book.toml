@@ -1,0 +1,19 @@
+[book]
+title = "sheep genome alignment"
+description = "annotation info across several genomes"
+authors = ["quank"]
+language = "en"
+
+[output.html]
+site-url = "/zsq_alignment/"
+
+git-repository-url = "https://github.com/quank/zsq_alignment"
+
+edit-url-template = "https://github.com/quank/zsq_alignment/edit/main/{path}"
+
+mathjax-support = true
+search.enable = true
+
+additional-css = ["zsq_code.css", "zsq-code-wrap.css", "zsq_print_table.css"]
+additional-js = ["zsq_code.js"]
+
